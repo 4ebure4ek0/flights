@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .filter_item {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .price{
+            display: flex;
+            gap: 10px;
+            .price_input{
+                width: 70%;
+            }
+        }
+
+        .filter_airline {
+            display: flex;
+            gap: 10px;
+
+            .airline_caption {
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                width: 140px;
+            }
+        }
+    }
+}

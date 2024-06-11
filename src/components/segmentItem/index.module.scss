@@ -1,0 +1,75 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 20px;
+
+    .cities {
+        display: grid;
+        grid-template-columns: 40% 20% 40%;
+        align-items: center;
+        justify-items: center;
+
+        .departure {
+            justify-self: start;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: start;
+        }
+
+        .arrival {
+            justify-self: end;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: end;
+        }
+
+        .airport {
+            color: #1b67ff;
+        }
+    }
+
+    .dates {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .date_and_time {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            .date {
+                color: #1b67ff;
+            }
+        }
+
+        .duration {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .transfer_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .transfer_block {
+            border: 1px solid #b6b6b6;
+            width: 90%;
+            position: relative;
+            margin: 10px;
+
+            .transfer {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: #fff;
+                padding: 0 15px;
+                color: #fc9149;
+            }
+        }
+    }
+}
